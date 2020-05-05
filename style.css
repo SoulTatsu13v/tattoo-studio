@@ -1,0 +1,245 @@
+/* POTRZEBNE DO CAŁEGO KODU */
+* {
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #CEC2C2;
+}
+
+a:hover {
+    color: #FA7B7B;
+}
+
+@font-face {
+    font-family: lombok;
+    src:
+        url(Lombok.otf);
+}
+
+
+
+/* HEADER & MENU */
+header {
+    background-image: url(girl_cover.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: #CEC2C2;
+    text-align: center;
+}
+
+.logo {
+    font-size: 90px;
+    color: #CEC2C2;
+    text-align: center;
+    padding-top: 40vh;
+    font-family: lombok;
+}
+
+.left-logo {
+    font-size: 41px;
+    color: #CEC2C2;
+    text-align: left;
+    font-family: lombok;
+    padding: 35px;
+}
+
+.insta_link {
+    text-align: center;
+    padding-top: 24px;
+    padding-right: 29.3px;
+    letter-spacing: 1px;
+    font-family: Helvetica;
+}
+
+.anchor {
+    padding-right: 4.8px;
+}
+
+/* MENU */
+#menuToggle {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+}
+
+.burger {
+    padding-right: 35px;
+    right: 35px;
+}
+
+#menuToggle span {
+    position: relative;
+    display: block;
+    background-color: #CEC2C2;
+    height: 4px;
+    border-radius: 36px;
+    margin-bottom: 12px;
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+
+
+#menu {
+    position: absolute;
+    width: 216px;
+    height: 30vh;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 125px;
+    right: -100px;
+    background: #000000 0.1;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+nav {
+    position: fixed;
+}
+
+#menu li {
+    padding: 38px 0;
+    font-size: 40px;
+    font-family: lombok;
+}
+
+#menu img {
+    width: 39.29px;
+    height: 39.29px;
+    padding: 50px 0;
+}
+
+#menu img:hover {
+    width: 45px;
+    height: 45px;
+}
+
+#menu a:hover {
+    color: #F8F8F8;
+}
+
+/*
+ * And let's fade it in from the left
+ */
+#menuToggle input:checked ~ ul {
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+}
+
+.pierwsza_kreska {
+    width: 42px;
+}
+
+.druga_kreska {
+    width: 21px;
+    transform: translate(21px);
+}
+
+.trzecia_kreska {
+    width: 10.5px;
+    transform: translate(31.5px);
+}
+
+
+/* OBRAZKI */
+
+#art {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    justify-content: center;
+}
+
+.jpg {
+    width: 312px;
+    height: 312px;
+    padding-right: 24px;
+    padding-top: 60px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+/* KONTAKT */
+#contact {
+    background-color: #000000;
+    height: 100vh;
+    width: 100%;
+    color: #CEC2C2;
+}
+
+#contact h3 {
+    font-family: lombok;
+    font-size: 90px;
+    padding-top: 163px;
+    padding-left: 170px;
+}
+
+.left {
+    padding-left: 170px;
+    color: #918989;
+    font-family: Helvetica;
+    float: left;
+    padding-top: 40vh;
+}
+
+.right {
+    color: #918989;
+    font-family: Helvetica;
+    padding-right: 170px;
+    text-align: right;
+    float: right;
+    padding-top: 40vh;
+}
+
+.containerek {
+    display: grid;
+}
+
+.kuba {
+    align-self: end;
+}

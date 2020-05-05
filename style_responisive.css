@@ -1,0 +1,25 @@
+@media only screen and (max-width: 1366px) {
+    #menu {
+        background-color: #000;
+    }
+
+    .jpg {
+        padding-right: 0px;
+    }
+
+    #art {
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .jpg {
+        padding-left: 250px;
+    }
+
+    #art {
+        height: 2500px;
+    }
+}
+
+@media only screen and (max-width: 812px) {}
